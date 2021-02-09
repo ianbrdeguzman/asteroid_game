@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Press Start 2P', cursive;
+    font-size: .6rem;
+}
+
+.menu {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: #272727;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.menu h1 {
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+}
+
+.menu p {
+    cursor: pointer;
+    animation: blink .5s linear 1s infinite;
+}
+
+.start {
+    display: none;
+}
+
+.end {
+    color: white;
+    background: #272727;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+}
+
+.end button {
+    cursor: pointer;
+    color: inherit;
+    font-family: inherit;
+    margin-top: 1rem;
+    border: none;
+    background: transparent;
+    animation: blink .5s linear 1s infinite;
+}
+
+.endGame {
+    display: flex;
+}
+
+.score-container {
+    color: white;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.high-score-container {
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
